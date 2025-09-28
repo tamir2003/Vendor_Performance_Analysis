@@ -12,8 +12,10 @@ Select * ,
 (TotalSalesDollars-TotalPurchaseDollars) as GrossProfit ,
 ((TotalSalesDollars-TotalPurchaseDollars)/TotalSalesDollars)*100 as ProfitMargin,
 (TotalSalesQuantity/TotalPurchaseQuantity) as StockTurnOver,
-(TotalSalesDollars/TotalPurchaseDollars) as SalesToPurchase_Ratio into VendorSales_summary
+(TotalSalesDollars/TotalPurchaseDollars) as SalesToPurchase_Ratio 
+into VendorSales_summary
 from Vendor_sale_summary
+
 
 
 
